@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLE - Fashion E-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Верхняя полоса -->
+    <div class="top-bar">
+        Бесплатная доставка при заказе от 5000 ₽
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="logo">STYLE</div>
+        
+        <nav class="nav">
+            <ul>
+                <li><a href="#new" class="nav-link">Новинки</a></li>
+                <li><a href="#categories" class="nav-link">Женщинам</a></li>
+                <li><a href="#categories" class="nav-link">Мужчинам</a></li>
+                <li><a href="#categories" class="nav-link">Аксессуары</a></li>
+                <li><a href="#products" class="nav-link">Sale</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <div class="icon-btn" id="searchBtn" title="Поиск">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <div class="icon-btn" id="profileBtn" title="Профиль">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div class="icon-btn" id="cartBtn" title="Корзина">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Летняя коллекция</h1>
+            <p>Откройте для себя новые поступления этого сезона. Элегантность в каждой детали.</p>
+            <a href="#products" class="btn hero-btn">Смотреть коллекцию</a>
+        </div>
+    </section>
+
+    <!-- Категории -->
+    <section class="section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Категории</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="images/жен.png"Женская одежда">
+                    <h3>Женщинам</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/муж.png" alt="Мужская одежда">
+                    <h3>Мужчинам</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/аксуссуары.png" alt="Аксессуары">
+                    <h3>Аксессуары</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Товары -->
+    <section class="section section-alt" id="products">
+        <div class="container">
+            <h2 class="section-title">Популярное</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/1.png" alt="Товар 1">
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                    <h4>хлопковая футболка</h4>
+                    <span class="price">12 900 ₽</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/2.png" alt="Товар 2">
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                    <h4>Классический бомбер</h4>
+                    <span class="price">24 500 ₽</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/3.png" alt="Товар 3">
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                    <h4>Джинсы прямого кроя</h4>
+                    <span class="price">7 200 ₽</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/4.png" alt="Товар 4">
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                    <h4>Шелковая блуза</h4>
+                    <span class="price">9 800 ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="section newsletter" id="newsletter">
+        <div class="container">
+            <h2>Будьте в курсе</h2>
+            <p>Подпишитесь на нашу рассылку, чтобы первыми узнавать о новых коллекциях и эксклюзивных предложениях.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" id="emailInput" placeholder="Ваш email адрес" required>
+                <button type="submit">Подписаться</button>
+            </form>
+            <p class="form-message" id="formMessage"></p>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>О нас</h4>
+                    <p>STYLE — это современный бренд одежды, сочетающий в себе минимализм, качество и заботу об окружающей среде.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Магазин</h4>
+                    <a href="#new" class="nav-link">Новинки</a>
+                    <a href="#categories" class="nav-link">Женщинам</a>
+                    <a href="#categories" class="nav-link">Мужчинам</a>
+                    <a href="#categories" class="nav-link">Аксессуары</a>
+                    <a href="#products" class="nav-link">Sale</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Помощь</h4>
+                    <a href="#" class="nav-link">Доставка и оплата</a>
+                    <a href="#" class="nav-link">Возврат</a>
+                    <a href="#" class="nav-link">Размерная сетка</a>
+                    <a href="#" class="nav-link">Контакты</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцсети</h4>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    <a href="https://telegram.org" target="_blank">Telegram</a>
+                    <a href="https://vk.com" target="_blank">VKontakte</a>
+                    <a href="https://pinterest.com" target="_blank">Pinterest</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 STYLE Fashion. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно корзины -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Корзина пуста</p>
+            </div>
+            <div class="cart-total" id="cartTotal"></div>
+            <button class="btn checkout-btn" id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно поиска -->
+    <div class="modal" id="searchModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Поиск</h2>
+            <input type="text" id="searchInput" placeholder="Что вы ищете?" class="search-input">
+            <button class="btn" id="searchSubmit">Найти</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно профиля -->
+    <div class="modal" id="profileModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Личный кабинет</h2>
+            <p>Войдите в аккаунт или зарегистрируйтесь</p>
+            <input type="email" placeholder="Email" class="search-input">
+            <input type="password" placeholder="Пароль" class="search-input">
+            <button class="btn">Войти</button>
+        </div>
+    </div>
+
+    <!-- Уведомление -->
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
